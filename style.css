@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Michroma&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Unica+One&display=swap');
+
+/* GERAL */
+body {
+    font-family: 'Quantico', monospace;
+    background: #000000;
+    color: #e6e6e6;
+    margin: auto;
+    line-height: 1.7;
+}
+
+section {
+    padding: 30px;
+}
+
+
+h1 {
+    font-family: 'Michroma', sans-serif;
+    text-align: center;
+    color: #F2780C;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Michroma', sans-serif;
+    color: #F2780C;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #F2780C;
+    margin-bottom: 5px;
+}
+
+blockquote {
+    background: #161616;
+    border-left: 5px solid #F2780C;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #393939;
+    margin: 40px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: #000000;
+    width: 2px;
+
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4d240b;
+    border-radius: 10px;
+    height: 5%;
+    margin: 5px;
+}
+
+
+.mission {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#mission {
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+}
+
+.small-note {
+    color: #b1b1b1;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+/* HEADER */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #070707;
+    transition: .3s ease;
+    border-bottom: #F2780C solid;
+}
+
+.navbar {
+    width: min(1200px, 92%);
+    height: 60px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-container img {
+    width: 38px;
+    border-radius: 5px;
+}
+
+.logo-container span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    position: relative;
+    transition: .3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -5px;
+    left: 0;
+
+    width: 0%;
+    height: 1px;
+
+    background: #F2780C;
+
+    transition: .3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+.nav-links li {
+    list-style: none;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 120px,
+            rgba(0,0,0,.03) 121px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 120px,
+            rgba(0,0,0,.03) 121px
+        );
+
+    animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(120px);
+    }
+
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 900px;
+    padding: 2rem;
+}
+
+.hero-tag {
+    font-family: 'Unica One', sans-serif;
+    display: block;
+    margin-bottom: 1.5rem;
+
+    letter-spacing: 4px;
+    color: #666;
+    font-size: .85rem;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+
+/* VAGAS */
+#jobs {
+    display: flex;
+    flex-wrap: wrap; /* joga para baixo quando faltar espaço */
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 20px; /* espaço entre os cards */
+}
+.job {
+    display: inline-block;
+    width: 40%;
+    top: 0;
+    padding: 5px;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    padding: 60px 0 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #070707;
+    transition: .3s ease;
+    border-top: #F2780C solid;
+}
+
+footer h3 {
+    margin: 0;
+}
+
+.footer-content {
+
+    width: min(1200px, 92%);
+    height: 60px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.footer-content p,
+.footer-content small {
+    color: rgba(255,255,255,.65);
+}
+#center {
+    text-align: center;
+    align-self: center;
+    color: rgba(255,255,255,.65);
+}
+#left {
+    align-content: left;
+}
+
+#right {
+    align-content: right;
+    text-align: right;
+    width: 40%;
+}
