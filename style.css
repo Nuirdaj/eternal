@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Michroma&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Unica+One&display=swap');
 
 /* GERAL */
+/* Estilos base do documento e tipografia */
 body {
     font-family: 'Quantico', monospace;
     background: #000000;
@@ -14,6 +15,7 @@ section {
 }
 
 
+/* TÍTULOS */
 h1 {
     font-family: 'Michroma', sans-serif;
     text-align: center;
@@ -90,7 +92,7 @@ html {
 }
 
 /* HEADER */
-
+/* Estilos para o topo fixo e menu de navegação */
 #header {
     position: fixed;
     top: 0;
@@ -165,7 +167,7 @@ html {
 }
 
 /* HERO */
-
+/* Área do banner inicial com animação de fundo */
 .hero {
     position: relative;
 
@@ -248,6 +250,7 @@ html {
 
 
 /* VAGAS */
+/* Cards de vagas em grade flexível */
 #jobs {
     display: flex;
     flex-wrap: wrap; /* joga para baixo quando faltar espaço */
@@ -263,8 +266,7 @@ html {
 
 
 /* FOOTER */
-
-
+/* Estilos do rodapé e conteúdo de final de página */
 footer {
     margin: 0;
     padding: 0;
