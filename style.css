@@ -363,3 +363,27 @@ footer h3 {
         opacity: 0.4;
     }
 }
+
+
+/* SHOWCASE */
+
+.showcase {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.showcase p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.showcase img {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    width: 800px;
+    border-radius: 10px;
+    border: 2px solid #F2780C;
+    box-shadow: 0 0 25px rgba(242, 120, 12, 0.25);
+}
